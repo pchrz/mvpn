@@ -1,5 +1,5 @@
-# vpn
-Simple BASH script to start and run your VPN .ovpn files. 
+# mvpn
+Simple BASH script to start and run your VPN .ovpn files and select different VPN server locations. 
 
 Only to be run on Linux/Unix systems\
 Pre-Req\
@@ -7,7 +7,9 @@ Pre-Req\
 
 2.) Create username/password file. First line username and Second line password. See pass file for an example.
 
-3.) Run sudo chmod +x vpn.sh to make the bash script executable.
+3.) Create a config file that is comma seperated the flag you wish to pass to the mvpn program and the location of the .ovpn file you want to call with that flag.
+
+4.) Run sudo chmod +x mvpn.sh to make the bash script executable.
 _____________
 
 # Add BASH command 
@@ -17,4 +19,4 @@ vim ~/.bashrc
 
 Then add with your other aliases or at the bottom of the file.
 
-alias vpn='sudo /home/your_dir/./vpn.sh'
+alias mvpn='sudo /home/your_dir/./mvpn.sh'
